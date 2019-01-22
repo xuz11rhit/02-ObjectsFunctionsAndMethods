@@ -24,65 +24,7 @@ def main():
     print(trih(3, 2))
     st(5, "blue")
     st(6, "red")
-    """
-    TESTS the functions that you will write below.
-    You write the tests per the _TODO_s below.
-    """
 
-###############################################################################
-# DONE: 3a.  Define a function immediately below this _TODO_.
-#   It takes two arguments that denote, for a right triangle,
-#   the lengths of the two sides adjacent to its right angle,
-#   and it returns the length of the hypotenuse of that triangle.
-#     HINT: Apply the Pythagorean theorem.
-#
-#   You may name the function and its parameters whatever you wish.
-#
-# DONE: 3b.  In main, CALL your function and print the returned value,
-#   to test whether you defined the function correctly.
-#
-###############################################################################
-def trih(a,b):
-    c = math.sqrt(a ^ 2 + b ^ 2)
-    return c
-
-###############################################################################
-# DONE: 4a.  Define a function immediately below this _TODO_.
-#   It takes two arguments:
-#     -- a string that represents a color (e.g. 'red')
-#     -- a positive integer that represents the thickness of a Pen.
-#
-#   The function should do the following (in the order listed):
-#     a. Constructs a TurtleWindow.
-#     b. Constructs two SimpleTurtles, where:
-#          - one has a Pen whose color is "green" and has the GIVEN thickness
-#        - - the other has a Pen whose color is the GIVEN color
-#              and whose thickness is 5
-#
-#        Note: the "GIVEN" color means the PARAMETER that represents a color.
-#        Likewise, the "GIVEN" thickness means the PARAMETER for thickness.
-#
-#     c. Makes the first (green) SimpleTurtle move FORWARD 100 pixels, and
-#        makes the other (thickness 5) SimpleTurtle move BACKWARD 100 pixels.
-#
-#     d. Tells the TurtleWindow to wait until the mouse is clicked.
-#
-#   You may name the function and its parameters whatever you wish.
-#
-# DONE: 4b.  In main, CALL your function at least TWICE (with different values
-#   for the arguments) to test whether you defined the function correctly.
-#
-###############################################################################
-def st(c,d):
-    window = rg.TurtleWindow()
-    Eden = rg.SimpleTurtle()
-    Fernando = rg.SimpleTurtle()
-    Eden.pen = rg.Pen("green", c)
-    Fernando.pen = rg.Pen(d, c)
-    Eden.forward(100)
-    Fernando.backward(100)
-    window.close_on_mouse_click()
-st(5, "blue")
 ###############################################################################
 # DONE: 5.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
